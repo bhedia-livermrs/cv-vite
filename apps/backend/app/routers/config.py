@@ -243,7 +243,7 @@ async def update_feature_config(request: FeatureConfigRequest) -> FeatureConfigR
 
 
 # Supported languages for i18n
-SUPPORTED_LANGUAGES = ["en", "es", "zh", "ja", "pt"]
+SUPPORTED_LANGUAGES = ["fr"]
 
 
 @router.get("/language", response_model=LanguageConfigResponse)
@@ -252,7 +252,7 @@ async def get_language_config() -> LanguageConfigResponse:
     stored = _load_config()
 
     # Support legacy single 'language' field migration
-    legacy_language = stored.get("language", "en")
+    legacy_language = stored.get("language", "fr")
 
     return LanguageConfigResponse(
         ui_language=stored.get("ui_language", legacy_language),
@@ -290,7 +290,7 @@ async def update_language_config(
     _save_config(stored)
 
     # Support legacy single 'language' field migration
-    legacy_language = stored.get("language", "en")
+    legacy_language = stored.get("language", "fr")
 
     return LanguageConfigResponse(
         ui_language=stored.get("ui_language", legacy_language),

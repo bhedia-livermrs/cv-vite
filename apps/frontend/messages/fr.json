@@ -1,0 +1,865 @@
+{
+  "common": {
+    "save": "Sauvegarder",
+    "saving": "Sauvegarde en cours...",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "download": "Télécharger",
+    "loading": "Chargement...",
+    "uploading": "Envoi en cours...",
+    "checking": "Vérification...",
+    "processing": "Traitement...",
+    "generating": "Génération...",
+    "error": "Erreur",
+    "success": "Succès",
+    "confirm": "Confirmer",
+    "back": "Retour",
+    "retry": "Réessayer",
+    "next": "Suivant",
+    "continue": "Continuer",
+    "finish": "Terminer",
+    "optional": "Optionnel",
+    "close": "Fermer",
+    "ok": "OK",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "reset": "Réinitialiser",
+    "apply": "Appliquer",
+    "selectOption": "Sélectionner une option...",
+    "unknown": "Inconnu",
+    "keysCleared": "Les clés API ont été supprimées avec succès",
+    "databaseReset": "La base de données a été réinitialisée avec succès",
+    "popupBlocked": "Popup bloqué. Veuillez autoriser les popups ou ouvrir cette URL manuellement: {url}"
+  },
+  "home": {
+    "brandLine1": "CV ",
+    "brandLine2": "Vite",
+    "docs": "Documentation",
+    "launchApp": "Démarrer l'application"
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "builder": "Générateur de CV",
+    "tailor": "Adapter le CV",
+    "settings": "Paramètres",
+    "backToDashboard": "Retour au tableau de bord",
+    "goToSettings": "Aller aux paramètres"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "subtitle": "Gérer vos CV et candidatures",
+    "myResumes": "Mes CV",
+    "noResumes": "Aucun CV pour l'instant",
+    "noResumesDescription": "Téléversez votre premier CV pour commencer",
+    "uploadResume": "Téléverser un CV",
+    "createNew": "Créer un nouveau CV",
+    "lastModified": "Dernière modification",
+    "actions": "Actions",
+    "preview": "Aperçu",
+    "viewResume": "Voir le CV",
+    "editResume": "Modifier le CV",
+    "deleteResume": "Supprimer le CV",
+    "downloadPdf": "Télécharger le CV",
+    "tailorResume": "Adapter le CV pour l'emploi",
+    "selectModule": "Sélectionner le module",
+    "masterResume": "CV principal",
+    "tailoredResume": "CV adapté",
+    "initializeMasterResume": "Initialiser le CV principal",
+    "initializeSequence": "Initialiser la séquence",
+    "refreshStatus": "Actualiser le statut",
+    "retryProcessing": "Réessayer le traitement",
+    "retryingProcessing": "Réessayer...",
+    "deleteAndReupload": "Supprimer et réessayer",
+    "processingFailedHint": "Nous n'avons pas pu lire ce fichier. Réessayez ou téléversez un fichier différent.",
+    "retrySuccess": "Traitement réussi !",
+    "retryFailed": "Échec de la tentative. Veuillez téléverser un fichier différent.",
+    "createResume": "Créer un CV",
+    "edited": "Modifié le {date}",
+    "statusLine": "STATUT : {status}",
+    "status": {
+      "checking": "Vérification...",
+      "processing": "Traitement...",
+      "ready": "Prêt",
+      "failed": "Échec du traitement",
+      "pending": "En attente"
+    },
+    "llmNotConfiguredTitle": "[ LLM NON CONFIGURÉ ]",
+    "llmNotConfiguredMessage": "> Aucune clé API fournie. L'adaptation du CV est désactivée. Veuillez configurer les clés API dans les paramètres.",
+    "setupRequiredTitle": "[ CONFIGURATION REQUISE ]",
+    "setupRequiredMessage": "> Veuillez configurer les clés API dans les paramètres pour activer l'adaptation du CV.",
+    "uploadDialog": {
+      "success": "CV téléchargé avec succès.",
+      "successMaster": "CV téléchargé et défini comme principal.",
+      "successMissingId": "Téléchargement réussi mais aucun ID de CV retourné.",
+      "parsingFailed": "CV téléchargé mais l'analyse IA a échoué. Vous pouvez toujours l'adapter manuellement.",
+      "failed": "Échec du téléchargement.",
+      "dropzoneTitle": "Cliquez ou glissez-déposez le fichier",
+      "dropzoneSubtitle": "PDF, DOC, DOCX (Max 4MB)",
+      "tryDifferentFile": "Essayez un autre fichier",
+      "parsingFailedKeepOpen": "L'analyse IA a échoué. Essayez un autre fichier ou fermez cette fenêtre."
+    }
+  },
+  "builder": {
+    "title": "Générateur de CV",
+    "editMode": "Mode édition",
+    "previewMode": "Mode aperçu",
+    "createAndPreview": "Créer et prévisualiser",
+    "unsavedDraft": "Brouillon non enregistré",
+    "personalInfo": "Informations personnelles",
+    "summary": "Résumé",
+    "experience": "Expérience",
+    "education": "Formation",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "certifications": "Certifications",
+    "languages": "Langues",
+    "awards": "Prix",
+    "addSection": "Ajouter une section",
+    "removeSection": "Supprimer la section",
+    "saveChanges": "Enregistrer les modifications",
+    "discardChanges": "Annuler les modifications",
+    "placeholders": {
+      "summary": "Décrivez brièvement votre parcours professionnel..."
+    },
+    "contentStats": {
+      "wordsChars": "{wordCount} mots / {charCount} caractères"
+    },
+    "additionalForm": {
+      "instructions": "Entrez les éléments séparés par des sauts de ligne (appuyez sur Entrée pour chaque élément).",
+      "placeholders": {
+        "technicalSkills": "React\nTypeScript\nNode.js",
+        "languages": "Anglais\nEspagnol",
+        "certifications": "AWS Solution Architect\nGoogle Analytics",
+        "awards": "Employé du mois\nVainqueur du Hackathon"
+      }
+    },
+    "customSections": {
+      "dialogTitle": "Ajouter une section personnalisée",
+      "dialogDescription": "Créez une nouvelle section pour votre CV avec un nom et un type personnalisés.",
+      "sectionNameLabel": "Nom de la section",
+      "sectionNamePlaceholder": "ex: Publications, Travail bénévole, Certifications",
+      "sectionTypeLabel": "Type de section",
+      "addCustomSectionButton": "Ajouter une section personnalisée",
+      "sectionTypes": {
+        "textBlockLabel": "Bloc de texte",
+        "textBlockDescription": "Zone de texte unique (comme le résumé)",
+        "itemListLabel": "Liste d'éléments",
+        "itemListDescription": "Entrées multiples avec détails (comme l'expérience)",
+        "stringListLabel": "Liste de compétences",
+        "stringListDescription": "Liste simple d'éléments (comme les compétences)"
+      },
+      "contentLabel": "Contenu",
+      "contentPlaceholder": "Entrez le contenu pour {name}...",
+      "defaultTextPlaceholder": "Entrez le contenu texte...",
+      "entryLabel": "Entrée",
+      "addEntryLabel": "Ajouter une entrée",
+      "itemsLabel": "Éléments",
+      "itemsPlaceholder": "Entrez les éléments, un par ligne",
+      "unknownSectionType": "Type de section inconnu : {type}",
+      "unknownDefaultSection": "Section par défaut inconnue : {section}"
+    },
+    "sectionHeader": {
+      "renameSection": "Renommer la section",
+      "customTag": "Personnalisé",
+      "hiddenFromPdfTag": "Caché du PDF",
+      "hideSection": "Masquer la section",
+      "showSection": "Afficher la section",
+      "moveUp": "Monter",
+      "moveDown": "Descendre",
+      "deleteSection": "Supprimer la section",
+      "deleteTitle": "Supprimer la section",
+      "deleteDescription": "Êtes-vous sûr de vouloir supprimer \"{name}\"? Cette action ne peut pas être annulée."
+    },
+    "previewTabs": {
+      "resume": "CV",
+      "coverLetter": "LETTRE DE COURTOISIE",
+      "outreach": "MAIL DE COURTOISIE",
+      "jdMatch": "CORRESPONDANCE JD"
+    },
+    "footer": {
+      "moduleLabel": "Module de génération de CV",
+      "singleColumn": "Colonne simple",
+      "twoColumn": "Double colonne"
+    },
+    "pageSize": {
+      "usLetter": "Lettre US"
+    },
+    "generatePrompt": {
+      "notAvailableTitle": "{title} Non disponible",
+      "notAvailableDescription": "Pour générer {title}, adaptez d'abord votre CV avec une description de poste.",
+      "goToDashboard": "Aller au tableau de bord",
+      "generateTitle": "Générer {title}",
+      "coverLetterDescription": "Générer une lettre de courtoisie adaptée à votre CV et à la description du poste.",
+      "outreachDescription": "Générer un message de courtoisie concis pour LinkedIn ou e-mail basé sur votre CV et la description du poste.",
+      "generateButton": "Générer {title}",
+      "coverLetterFooter": "Astuce : adapter d'abord pour de meilleurs résultats.",
+      "outreachFooter": "Astuce : garder court et personnalisé."
+    },
+    "regenerateDialog": {
+      "title": "Regénérer {title}?",
+      "description": "Ceci remplacera votre {title} actuel par un nouveau généré. Toutes les modifications que vous avez apportées seront perdues."
+    },
+    "regenerate": {
+      "buttonLabel": "Regénérer par IA",
+      "selectDialog": {
+        "title": "Sélectionner les éléments à regénérer",
+        "subtitle": "Choisissez les parties de votre CV que vous souhaitez améliorer",
+        "experience": "expérience professionnelle",
+        "projects": "Projets",
+        "skills": "Compétences techniques",
+        "noItemsSelected": "Veuillez sélectionner au moins un élément",
+        "noItemsAvailable": "Aucun élément disponible à regénérer. Ajoutez d'abord une expérience, des projets ou des compétences.",
+        "itemCount": {
+          "one": "{count} élément",
+          "other": "{count} éléments"
+        },
+        "continueButton": "Continuer"
+      },
+      "instructionDialog": {
+        "title": "Que souhaitez-vous améliorer ?",
+        "subtitle": "Fournissez des commentaires spécifiques pour guider l'IA",
+        "defaultInstruction": "Améliorez le contenu avec des verbes d'action plus forts et un impact quantifiable là où c'est possible.",
+        "selectedItems": "Éléments sélectionnés",
+        "placeholder": "Exemple : ajoutez plus de métriques quantifiables, mettez l'accent sur les compétences en leadership, utilisez plus de verbes d'action...",
+        "hint": "Soyez précis sur ce qui ne vous satisfait pas",
+        "backButton": "Retour",
+        "generateButton": "Générer"
+      },
+      "diffPreview": {
+        "title": "Prévisualiser les modifications",
+        "subtitle": "Revoyez le contenu régénéré avant de l'appliquer",
+        "expandItem": "Développer {item}",
+        "collapseItem": "Réduire {item}",
+        "partialFailures": "{count} éléments n'ont pas pu être régénérés. Vous pouvez toujours revoir et appliquer ceux qui ont réussi.",
+        "changesCount": "{count} éléments modifiés",
+        "rejectButton": "Rejeter et regénérer",
+        "acceptButton": "Accepter les modifications",
+        "originalLabel": "Original",
+        "newLabel": "Nouveau",
+        "noContent": "Aucun contenu",
+        "applying": "Application...",
+        "loading": "Génération du contenu amélioré..."
+      },
+      "errors": {
+        "generationFailed": "Échec de la génération du contenu. Veuillez réessayer.",
+        "applyFailed": "Échec de l'application des modifications. Veuillez réessayer.",
+        "resumeChanged": "Le contenu du CV a changé depuis la régénération. Veuillez regénérer et réessayer.",
+        "noChangesToApply": "Aucune modification à appliquer.",
+        "networkError": "Erreur réseau. Veuillez vérifier votre connexion."
+      }
+    },
+    "jdMatch": {
+      "yourResume": "Votre CV",
+      "matchingKeywordsHighlighted": "(mots-clés correspondants mis en surbrillance)",
+      "jobDescriptionTitle": "Description de poste",
+      "at": "chez",
+      "atSeparator": " chez ",
+      "roleSeparator": "-",
+      "aboutTitle": "À propos de JD Match",
+      "aboutDescription": "Cette vue montre à quel point votre CV correspond à la description du poste. Les mots-clés de la description du poste sont mis en surbrillance jaune sur votre CV, ce qui vous aide à voir quelles compétences et quels termes sont déjà couverts.",
+      "highlightedKeywordsTitle": "Mots-clés mis en surbrillance",
+      "highlightedKeywordsDescriptionTemplate": "Les mots mis en surbrillance __COLOR__ apparaissent à la fois dans la description du poste et dans votre CV. Un taux de correspondance plus élevé suggère un meilleur alignement avec les exigences du poste.",
+      "highlightedKeywordsDescriptionPrefix": "Mots mis en surbrillance",
+      "highlightColor": "jaune",
+      "highlightedKeywordsDescriptionSuffix": "apparaissent à la fois dans la description du poste et dans votre CV. Un taux de correspondance plus élevé suggère un meilleur alignement avec les exigences du poste.",
+      "tipsTitle": "Conseils",
+      "tips": {
+        "items": {
+          "addMissingKeywords": "Utilisez l'onglet CV pour ajouter les mots-clés manquants",
+          "focusTechnicalSkills": "Concentrez-vous sur les compétences techniques et les outils mentionnés dans la description du poste",
+          "matchActionVerbs": "Utilisez des verbes d'action correspondant aux exigences du poste"
+        }
+      },
+      "stats": {
+        "keywordsExtracted": "{count} mots-clés extraits",
+        "matchesFound": "{count} correspondances trouvées",
+        "matchRateLabel": "Taux de correspondance:"
+      }
+    },
+    "genericItemForm": {
+      "itemLabel": "Objet",
+      "addItemLabel": "Ajouter {label}",
+      "fields": {
+        "title": "Titre",
+        "organization": "Organisation",
+        "location": "Emplacement",
+        "years": "Années",
+        "descriptionPoints": "Points de description"
+      },
+      "actions": {
+        "addPoint": "Ajouter un point"
+      },
+      "placeholders": {
+        "title": "Titre",
+        "organization": "Organisation",
+        "location": "Emplacement",
+        "years": "Jan 2020 - Present",
+        "description": "Décrivez votre contribution..."
+      },
+      "noEntries": "Aucune entrée {label}",
+      "addFirstItem": "Ajouter le premier {label}"
+    },
+    "forms": {
+      "experience": {
+        "addJob": "Ajouter un emploi",
+        "addFirstJob": "Ajouter le premier emploi",
+        "fields": {
+          "jobTitle": "Titre de l'emploi",
+          "company": "Entreprise"
+        },
+        "placeholders": {
+          "jobTitle": "Développeur Senior",
+          "company": "Tech Corp",
+          "location": "À distance / Ville",
+          "years": "Jan 2020 - Present",
+          "description": "Décrivez votre réalisation..."
+        }
+      },
+      "education": {
+        "addSchool": "Ajouter une école",
+        "addFirstSchool": "Ajouter la première école",
+        "fields": {
+          "institution": "Institution",
+          "degree": "Diplôme",
+          "description": "Description",
+          "descriptionOptional": "Description (Optional)"
+        },
+        "placeholders": {
+          "institution": "Nom de l'université",
+          "degree": "Bachelor of Science",
+          "years": "Août 2016 - Mai 2020",
+          "description": "Additional details..."
+        }
+      },
+      "projects": {
+        "addProject": "Ajouter un projet",
+        "addFirstProject": "Ajouter le premier projet",
+        "fields": {
+          "projectName": "Nom du projet",
+          "role": "Rôle",
+          "website": "Site web"
+        },
+        "placeholders": {
+          "projectName": "Resume Matcher",
+          "role": "Créateur",
+          "years": "Mar 2023",
+          "github": "github.com/username/project",
+          "website": "https://project-demo.com",
+          "description": "Détails du projet..."
+        }
+      }
+    },
+    "formatting": {
+      "panelTitle": "Modèle et formatage",
+      "template": "Modèle",
+      "templates": {
+        "swissSingle": {
+          "name": "Une colonne",
+          "description": "Disposition traditionnelle pleine largeur avec densité de contenu maximale"
+        },
+        "swissTwoColumn": {
+          "name": "Deux colonnes",
+          "description": "Colonne principale axée sur l'expérience avec barre latérale pour les compétences"
+        },
+        "modern": {
+          "name": "Moderne",
+          "description": "Accents colorés avec couleurs de thème personnalisables"
+        },
+        "modernTwoColumn": {
+          "name": "Moderne Deux Colonnes",
+          "description": "Disposition à deux colonnes avec accents colorés modernes et thèmes"
+        }
+      },
+      "accentColor": "Couleur d'accentuation",
+      "accentColors": {
+        "blue": "Bleu",
+        "green": "Vert",
+        "orange": "Orange",
+        "red": "Rouge"
+      },
+      "pageSize": "Format de page",
+      "margins": "Marges (mm)",
+      "margin": {
+        "top": "Haut",
+        "bottom": "Bas",
+        "left": "Gauche",
+        "right": "Droite"
+      },
+      "spacing": "Espacement",
+      "spacingSection": "Section",
+      "spacingItems": "Éléments",
+      "spacingLines": "Lignes",
+      "fontSize": "Taille de la police",
+      "baseFontSize": "Base",
+      "headerScale": "En-têtes",
+      "headerFontFamily": "En-têtes",
+      "bodyFontFamily": "Corps",
+      "fontNames": {
+        "serif": "Serif",
+        "sans": "Sans",
+        "mono": "Mono"
+      },
+      "options": "Options",
+      "compactMode": "Mode compact",
+      "contactIcons": "Icônes de contact",
+      "effectiveOutput": "Résultat effectif",
+      "effectiveMargins": "Marges (mm): T{top} B{bottom} L{left} R{right}",
+      "effectiveSectionGap": "Écart de section",
+      "effectiveItemGap": "Écart d'élément",
+      "effectiveLineHeight": "Hauteur de ligne",
+      "effectiveBaseFont": "Police de base",
+      "effectiveHeaderScale": "Échelle d'en-tête",
+      "effectiveHeaderFont": "Police d'en-tête",
+      "effectiveBodyFont": "Police du corps",
+      "compactHint": "Mode compact resserre l'espacement et la hauteur de ligne. Les marges et la taille de la police de base restent littérales.",
+      "resetDefaults": "Réinitialiser aux valeurs par défaut"
+    },
+    "personalInfoForm": {
+      "placeholders": {
+        "name": "John Doe",
+        "title": "Développeur Logiciel",
+        "email": "[EMAIL_ADDRESS]",
+        "phone": "+1 (555) 000-0000",
+        "location": "Ville, Pays",
+        "website": "portfolio.com",
+        "linkedin": "linkedin.com/in/john",
+        "github": "github.com/john"
+      }
+    },
+    "leftPanel": {
+      "editorPanel": "Panneau d'édition",
+      "coverLetterEditor": "Éditeur de lettre de motivation",
+      "outreachEditor": "Éditeur de message de sensibilisation",
+      "jdMatchAnalysis": "Analyse de correspondance JD"
+    },
+    "alerts": {
+      "saveNotAvailable": "L'enregistrement n'est disponible que lors de l'édition d'un CV existant.",
+      "saveFailed": "Échec de l'enregistrement",
+      "coverLetterSaveSuccess": "Lettre de motivation enregistrée",
+      "outreachSaveSuccess": "Message de sensibilisation enregistré",
+      "downloadSuccess": "Résumé téléchargé",
+      "reloadFailed": "Changements appliqués, mais échec du rechargement du CV. Veuillez rafraîchir la page.",
+      "downloadNotAvailable": "Le téléchargement n'est disponible que pour les CV enregistrés.",
+      "downloadFailed": "Échec du téléchargement du CV. Veuillez réessayer.",
+      "coverLetterSaveFailed": "Échec de l'enregistrement de la lettre de motivation. Veuillez réessayer.",
+      "coverLetterDownloadRequiresResume": "Enregistrez le CV d'abord pour télécharger la lettre de motivation.",
+      "coverLetterMissing": "Aucune lettre de motivation disponible. Activez la génération de lettres de motivation dans les paramètres et personnalisez un CV.",
+      "coverLetterDownloadFailed": "Échec du téléchargement de la lettre de motivation: {error}",
+      "outreachSaveFailed": "Échec de l'enregistrement du message de sensibilisation. Veuillez réessayer.",
+      "coverLetterGenerateFailed": "Échec de la génération de la lettre de motivation: {error}",
+      "outreachGenerateFailed": "Échec de la génération du message de sensibilisation: {error}"
+    }
+  },
+  "enrichment": {
+    "title": "Amélioration de CV",
+    "loading": {
+      "analyzingTitle": "Analyse de votre CV...",
+      "analyzingDescription": "Identification des domaines nécessitant plus de détails",
+      "generatingTitle": "Rédaction de descriptions améliorées...",
+      "generatingDescription": "Utilisation de vos réponses pour améliorer votre CV",
+      "applyingTitle": "Application des améliorations...",
+      "applyingDescription": "Mise à jour de votre CV principal"
+    },
+    "questionProgress": "Question {current} sur {total}",
+    "itemType": {
+      "experience": "Expérience",
+      "project": "Projet"
+    },
+    "shortcutHint": "Appuyez sur Shift+Entrée pour une nouvelle ligne, Cmd/Ctrl+Entrée pour continuer",
+    "preview": {
+      "title": "Revoir le nouveau contenu",
+      "description": "Revoir les nouveaux points qui seront ajoutés à votre CV",
+      "applyButton": "Ajouter au CV",
+      "keepingLabel": "Conserver",
+      "addingLabel": "Ajouter",
+      "existingCount": "({count} existants)",
+      "newCount": "({count} nouveaux)",
+      "noExistingDescription": "Aucune description existante"
+    },
+    "complete": {
+      "title": "Résumé amélioré !",
+      "updatedCountSingular": "{count} élément mis à jour avec succès",
+      "updatedCountPlural": "{count} éléments mis à jour avec succès",
+      "updatedFallback": "Votre CV a été mis à jour avec des descriptions améliorées",
+      "doneButton": "Terminé"
+    },
+    "noImprovements": {
+      "title": "Votre CV est parfait !",
+      "defaultDescription": "Nous n'avons trouvé aucun élément nécessitant une amélioration. Vos descriptions d'expérience et de projet sont déjà très détaillées."
+    },
+    "error": {
+      "title": "Une erreur s'est produite",
+      "unexpected": "Une erreur inattendue s'est produite"
+    }
+  },
+  "tailor": {
+    "title": "Adapter le CV",
+    "subtitle": "Optimisez votre CV pour un poste spécifique",
+    "heroTitle": "Adapter votre CV",
+    "selectResume": "Sélectionner un CV",
+    "pasteJobDescription": "Coller la description du poste",
+    "pasteJobDescriptionBelow": "Coller la description du poste ci-dessous",
+    "jobDescriptionPlaceholder": "Collez la description du poste ici...",
+    "promptLabel": "Intensité d'adaptation",
+    "promptDescription": "Choisissez l'intensité avec laquelle adapter votre CV à la description du poste.",
+    "promptOptions": {
+      "nudge": {
+        "label": "Légère adaptation",
+        "description": "Modifications minimales pour mieux aligner l'expérience existante."
+      },
+      "keywords": {
+        "label": "Mots-clés pertinents",
+        "description": "Intégration de mots-clés pertinents sans modifier le rôle ou le périmètre."
+      },
+      "full": {
+        "label": "Adaptation complète",
+        "description": "Adaptation complète utilisant la description du poste."
+      }
+    },
+    "analyzeJob": "Analyser le poste",
+    "generateTailored": "Générer un CV adapté",
+    "setupRequiredTitle": "[ SETUP REQUIRED ]",
+    "noApiKeyMessage": "> Aucune clé API configurée. L'adaptation du CV nécessite un fournisseur LLM.",
+    "configureApiKey": "Configurer la clé API",
+    "configureApiKeyFirst": "Configurer la clé API en premier",
+    "charactersCount": "{count} caractères",
+    "matchScore": "Score de correspondance",
+    "suggestions": "Suggestions",
+    "keywords": "Mots-clés à inclure",
+    "footerTagline": "MOTEUR D'OPTIMISATION BASÉ SUR L'IA",
+    "diffModal": {
+      "title": "Revoir les résultats d'adaptation IA",
+      "subtitle": "Veuillez examiner attentivement les changements pour vous assurer qu'aucune fausse information n'a été ajoutée",
+      "summary": "Résumé des changements",
+      "skillsAdded": "Compétences ajoutées",
+      "skillsRemoved": "Compétences supprimées",
+      "descriptionsModified": "Descriptions modifiées",
+      "certificationsAdded": "Certifications ajoutées",
+      "highRiskChanges": "Changements à haut risque",
+      "warningTitle": "{count} ajout(s) à haut risque détecté(s)",
+      "warningMessage": "Veuillez confirmer que ces ajouts existent dans votre CV d'origine ou qu'ils sont reflétés dans vos descriptions",
+      "summaryChanges": "Résumé des changements",
+      "skillChanges": "Changements de compétences",
+      "descriptionChanges": "Changements dans la description de l'expérience",
+      "experienceChanges": "Changements dans l'entrée d'expérience",
+      "educationChanges": "Changements dans l'éducation",
+      "projectChanges": "Changements dans les projets",
+      "certificationChanges": "Changements dans les certifications",
+      "rejectButton": "Rejeter et régénérer",
+      "confirmButton": "Confirmer et sauvegarder"
+    },
+    "regenerateDialog": {
+      "title": "Régénérer le CV adapté ?",
+      "description": "Cela annulera l'aperçu actuel et demandera un nouveau résultat d'adaptation IA.",
+      "confirmLabel": "Régénérer"
+    },
+    "missingDiffDialog": {
+      "title": "Impossible de calculer les changements",
+      "description": "Impossible de calculer les différences pour ce CV. Cela peut arriver avec des anciens CV qui manquent de données structurées. Vous pouvez continuer à sauvegarder le CV adapté ou annuler pour examiner plus tard.",
+      "confirmLabel": "Continuer sans différences"
+    },
+    "errors": {
+      "jobDescriptionTooShort": "La description du poste est trop courte. Ajoutez plus de détails et réessayez.",
+      "apiKeyError": "Votre clé API ne fonctionne pas. Vérifiez-la dans les paramètres.",
+      "rateLimit": "La limite de débit a été atteinte. Attendez environ une minute et réessayez.",
+      "failedToGenerate": "Impossible de générer le CV. Vérifiez votre clé API dans les paramètres, puis réessayez.",
+      "timeout": "La requête a expiré. Veuillez réessayer avec une description de poste plus courte ou vérifiez votre connexion.",
+      "failedToPreview": "Impossible de prévisualiser le CV. Vérifiez votre clé API dans les paramètres, puis réessayez.",
+      "failedToConfirm": "Impossible d'appliquer les changements. Veuillez réessayer."
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "subtitle": "Configurer vos préférences",
+    "aiProvider": "Fournisseur IA",
+    "aiProviderDescription": "Sélectionnez votre fournisseur IA préféré pour l'analyse de CV",
+    "apiKey": "Clé API",
+    "apiKeyPlaceholder": "Entrez votre clé API",
+    "saveApiKey": "Sauvegarder la clé API",
+    "contentLanguage": "Langue de contenu",
+    "contentLanguageDescription": "Langue pour le contenu généré (CV, lettres de motivation)",
+    "uiLanguage": "Langue de l'interface",
+    "uiLanguageDescription": "Langue de l'interface",
+    "theme": "Thème",
+    "themeDescription": "Choisissez votre thème de couleur préféré",
+    "lightMode": "Light",
+    "darkMode": "Dark",
+    "systemMode": "System",
+    "dangerZone": "Zone dangereuse",
+    "clearApiKeys": "Effacer les clés API",
+    "clearApiKeysDescription": "Supprime toutes les clés API stockées de la configuration. Cette action ne peut pas être annulée.",
+    "resetDatabase": "Réinitialiser la base de données",
+    "resetDatabaseDescription": "Supprime TOUTES les données, y compris les CV, les postes et le contenu généré. Cette action ne peut pas être annulée.",
+    "llmConfigurationTitle": "Configuration LLM",
+    "providerLabel": "Fournisseur",
+    "statusCards": {
+      "llm": "LLM",
+      "database": "Base de données",
+      "resumes": "CV",
+      "jobs": "Postes",
+      "improvements": "Améliorations",
+      "masterResume": "CV principal"
+    },
+    "statusValues": {
+      "healthy": "Sain",
+      "offline": "Hors ligne",
+      "connected": "Connecté",
+      "configured": "Configuré",
+      "notSet": "Non défini"
+    },
+    "apiKeyMenu": {
+      "buttonLabel": "API LLM",
+      "title": "Clé API OpenAI",
+      "description": "Fournissez votre clé pour activer les modèles OpenAI hébergés.",
+      "savedMessage": "Clé API sauvegardée.",
+      "loadError": "Impossible de charger la clé API",
+      "updateError": "Impossible de mettre à jour la clé API"
+    },
+    "setupRequired": {
+      "title": "[ CONFIGURATION REQUISE ]",
+      "description": "> Aucune clé API configurée. Ajoutez votre clé API de fournisseur LLM ci-dessous pour activer l'adaptation du CV."
+    },
+    "systemStatus": {
+      "title": "Statut du système",
+      "refresh": "Rafraîchir",
+      "unableToConnect": "Impossible de se connecter au serveur",
+      "expectedAt": "Attendu à : {apiUrl}",
+      "lastFetched": {
+        "never": "Jamais",
+        "justNow": "À l'instant",
+        "minutesAgo": "Il y a {minutes}m",
+        "hoursAgo": "Il y a {hours}h"
+      }
+    },
+    "llmConfiguration": {
+      "selectedProvider": "{provider}",
+      "modelLabel": "Modèle",
+      "defaultModel": "{model}",
+      "apiKeyLabel": "Clé API",
+      "apiKeyOptionalForOllama": "(Optionnel pour Ollama)",
+      "apiKeyOptional": "(Optionnel)",
+      "apiKeyPlaceholder": "sk-...",
+      "apiKeyNotRequiredPlaceholder": "Non requis pour les modèles locaux",
+      "apiKeyOptionalPlaceholder": "Laissez vide si votre serveur n'a pas d'authentification",
+      "leaveBlankToKeepExistingKey": "LAISSEZ VIDE POUR GARDER LA CLÉ EXISTANTE",
+      "baseUrlLabel": "URL de base (optionnel)",
+      "baseUrlPlaceholder": "e.g. https://api.openai.com/v1",
+      "baseUrlDescription": "Remplacez l'URL de base de l'API pour utiliser un point de terminaison de proxy/agrégateur. Laissez vide pour utiliser la valeur par défaut du fournisseur.",
+      "ollamaServerUrl": "URL du serveur Ollama",
+      "ollamaServerUrlPlaceholder": "http://localhost:11434",
+      "reasoningEffortLabel": "Effort de raisonnement",
+      "reasoningEffortAuto": "Auto",
+      "reasoningEffortAutoDesc": "Ne pas envoyer reasoning_effort — valeur par défaut pour une compatibilité maximale",
+      "reasoningEffortMinimal": "Minimal",
+      "reasoningEffortLow": "Faible",
+      "reasoningEffortMedium": "Moyen",
+      "reasoningEffortHigh": "Élevé",
+      "reasoningEffortDescription": "N'affecte pas les modèles capables de raisonner (famille gpt-5, Claude 3.7+, DeepSeek R1, OpenAI o1/o3). Les fournisseurs incompatibles abandonnent cette valeur automatiquement.",
+      "testConnection": "Tester la connexion",
+      "errorPrefix": "ERREUR: {error}",
+      "connectionSuccessful": "CONNEXION RÉUSSIE",
+      "connectionFailed": "CONNEXION ÉCHOUÉE",
+      "connectionDetails": "Fournisseur: {provider} | Modèle: {model}",
+      "testPromptLabel": "PROMPT DE TEST",
+      "modelOutputLabel": "SORTIE DU MODÈLE",
+      "reasoningContentLabel": "RÉFLEXION DU MODÈLE",
+      "errorDetailLabel": "DÉTAIL DE L'ERREUR",
+      "healthErrors": {
+        "api_key_missing": "Clé API non configurée. Veuillez ajouter une clé dans Paramètres.",
+        "health_check_failed": "La vérification de l'intégrité a échoué.",
+        "duplicate_v1_path": "La vérification de l'intégrité a échoué. L'URL de base peut contenir un chemin /v1 en double.",
+        "not_found_404": "La vérification de l'intégrité a échoué. 404 Non trouvé - vérifiez que l'URL de base correspond au fournisseur.",
+        "html_response": "La vérification de l'intégrité a échoué. L'URL de base a retourné du HTML ; il peut s'agir d'une URL de console ou d'un chemin de passerelle non pris en charge."
+      },
+      "healthWarnings": {
+        "empty_content": "Le LLM a renvoyé un contenu vide pour la vérification d'intégrité."
+      }
+    },
+    "contentGeneration": {
+      "title": "Génération de contenu",
+      "description": "Permet la génération de contenu supplémentaire lors de l'adaptation du CV. Lorsqu'ils sont activés, ces documents seront générés automatiquement avec votre CV adapté.",
+      "coverLetter": {
+        "label": "Lettre de motivation",
+        "description": "Générer une lettre de motivation adaptée avec votre CV"
+      },
+      "outreachMessage": {
+        "label": "Message de prospection",
+        "description": "Générer un message de réseautage pour LinkedIn ou e-mail"
+      },
+      "customPromptLabel": "Invite personnalisée (optionnel)",
+      "customPromptHelp": "Doit inclure les espaces réservés suivants (chacun entre accolades) : job_description, resume_data, output_language. Laissez vide pour utiliser l'invite par défaut.",
+      "customPromptResetButton": "Réinitialiser à la valeur par défaut",
+      "customPromptErrorMissing": "Il manque les espaces réservés requis : {missing}"
+    },
+    "promptSettings": {
+      "title": "Paramètres d'invite",
+      "description": "Choisissez l'invite par défaut utilisée pour l'adaptation du CV.",
+      "defaultLabel": "Invite d'adaptation par défaut"
+    },
+    "footer": {
+      "status": {
+        "checking": "Vérification...",
+        "ready": "STATUT : PRÊT",
+        "setupRequired": "STATUT : CONFIGURATION REQUISE",
+        "offline": "STATUT : HORS LIGNE"
+      }
+    },
+    "errors": {
+      "unableToConnectBackend": "Impossible de joindre le serveur. Assurez-vous qu'il est en cours d'exécution.",
+      "apiKeyRequired": "Une clé API est requise pour le fournisseur sélectionné.",
+      "unknownProvider": "Fournisseur inconnu renvoyé par le backend : {provider}",
+      "unableToSaveConfiguration": "Impossible de sauvegarder la configuration",
+      "failedToClearApiKeys": "Impossible de vider les clés API. Veuillez réessayer.",
+      "failedToResetDatabase": "Impossible de réinitialiser la base de données. Veuillez réessayer."
+    }
+  },
+  "resumeViewer": {
+    "resumeNotFound": "Résumé introuvable",
+    "loading": "Chargement du CV...",
+    "useTailorFeature": "Utiliser la fonctionnalité d'adaptation",
+    "retryProcessing": "Réessayer le traitement",
+    "deleteAndStartOver": "Supprimer et recommencer",
+    "returnToDashboard": "Retour au tableau de bord",
+    "enhanceResume": "Améliorer le CV",
+    "downloadResume": "Télécharger le CV",
+    "deletedTitle": "Résumé supprimé",
+    "deletedDescriptionMaster": "Votre CV principal a été définitivement supprimé du système.",
+    "deletedDescriptionRegular": "Le CV a été définitivement supprimé du système.",
+    "deleteFailedTitle": "Suppression échouée",
+    "errors": {
+      "processingFailed": "Nous n'avons pas pu lire votre CV. Veuillez réessayer le traitement, ou supprimez-le et téléversez un fichier différent.",
+      "stillProcessing": "Votre CV est toujours en cours de traitement. Veuillez patienter quelques secondes et rafraîchir la page.",
+      "notProcessedYet": "Le CV n'a pas encore été traité. Veuillez utiliser la fonctionnalité d'adaptation pour générer un CV structuré.",
+      "noDataAvailable": "Aucune donnée de CV disponible.",
+      "failedToLoad": "Impossible de charger les données du CV.",
+      "failedToDelete": "Impossible de supprimer le CV. Veuillez réessayer."
+    },
+    "titlePlaceholder": "Entrez le titre du CV..."
+  },
+  "preview": {
+    "margins": "Marges",
+    "calculating": "Calcul en cours...",
+    "pageBreak": "Saut de page",
+    "pageCountSingular": "{count} page",
+    "pageCountPlural": "{count} pages",
+    "zoomIn": "Zoom avant",
+    "zoomOut": "Zoom arrière"
+  },
+  "resume": {
+    "personalInfo": {
+      "name": "Nom complet",
+      "title": "Titre du poste",
+      "email": "Email",
+      "phone": "Téléphone",
+      "location": "Emplacement",
+      "website": "Site web",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    },
+    "sections": {
+      "personalInfo": "Informations personnelles",
+      "summary": "Résumé",
+      "experience": "Expérience",
+      "education": "Éducation",
+      "projects": "Projets",
+      "skills": "Compétences et prix",
+      "skillsOnly": "Compétences",
+      "certifications": "Formation et certifications",
+      "languages": "Langues",
+      "awards": "Prix",
+      "links": "Liens"
+    },
+    "defaults": {
+      "name": "Votre nom"
+    },
+    "additional": {
+      "technicalSkills": "Compétences techniques"
+    },
+    "additionalLabels": {
+      "technicalSkills": "Compétences techniques:",
+      "languages": "Langues:",
+      "certifications": "Certifications:",
+      "awards": "Prix:"
+    }
+  },
+  "coverLetter": {
+    "title": "Lettre de motivation",
+    "generate": "Générer une lettre de motivation",
+    "regenerate": "Régénérer",
+    "copyToClipboard": "Copier dans le presse-papiers",
+    "copied": "Copié !",
+    "editor": {
+      "placeholder": "Votre lettre de motivation apparaîtra ici après avoir adapté votre CV avec la génération de lettre de motivation activée...",
+      "tip": "ASTUCE : Une bonne lettre de motivation compte généralement 300-400 mots. Modifiez selon vos besoins pour personnaliser."
+    },
+    "preview": {
+      "defaultName": "Votre nom",
+      "emptyTitle": "Aucun contenu de lettre de motivation pour le moment.",
+      "emptyDescription": "Activez la génération de lettre de motivation dans les paramètres, puis adaptez un CV."
+    },
+    "print": {
+      "emptyContent": "Aucun contenu de lettre de motivation disponible."
+    }
+  },
+  "outreach": {
+    "title": "Message de prospection",
+    "generate": "Générer un message de prospection",
+    "regenerate": "Régénérer",
+    "copy": "Copier",
+    "copyToClipboard": "Copier dans le presse-papiers",
+    "copied": "Copié !",
+    "editor": {
+      "placeholder": "Votre message de prospection apparaîtra ici après avoir adapté votre CV avec la génération de message de prospection activée...",
+      "tip": "ASTUCE : Gardez les messages de prospection courts (100-150 mots). Copiez et collez sur LinkedIn ou par email."
+    },
+    "preview": {
+      "channels": {
+        "linkedin": "LinkedIn",
+        "email": "Email"
+      },
+      "howToUseTitle": "Comment utiliser :",
+      "steps": {
+        "step1": "1. Copiez le message en utilisant le bouton ci-dessus",
+        "step2": "2. Ouvrez LinkedIn ou votre client de messagerie",
+        "step3": "3. Collez et personnalisez si nécessaire",
+        "step4": "4. Envoyez aux recruteurs ou responsables du recrutement"
+      },
+      "emptyTitle": "Aucun message de prospection pour le moment.",
+      "emptyDescription": "Activez la génération de message de prospection dans les paramètres, puis adaptez un CV."
+    }
+  },
+  "errors": {
+    "generic": "Une erreur s'est produite. Veuillez réessayer.",
+    "networkError": "Erreur réseau. Veuillez vérifier votre connexion.",
+    "unauthorized": "Veuillez vous connecter pour continuer.",
+    "notFound": "La ressource demandée est introuvable.",
+    "validationError": "Certains champs nécessitent une attention. Vérifiez les champs en surbrillance et réessayez.",
+    "boundary": {
+      "title": "Une erreur s'est produite",
+      "description": "Une erreur inattendue s'est produite. Essayez de recharger la page — si le problème persiste, faites-le-nous savoir.",
+      "tryAgain": "Réessayer",
+      "reloadPage": "Recharger la page"
+    }
+  },
+  "a11y": {
+    "removeItem": "Supprimer l'élément",
+    "removeDescription": "Supprimer cette ligne",
+    "removeFile": "Supprimer le fichier"
+  },
+  "confirmations": {
+    "deleteResume": "Supprimer ce CV?",
+    "deleteResumeDescription": "Le CV sera définitivement supprimé.",
+    "deleteMasterResumeTitle": "Supprimer le CV principal",
+    "deleteMasterResumeDescription": "Votre CV principal sera définitivement supprimé.",
+    "deleteResumeFromSystemDescription": "Le CV sera définitivement supprimé.",
+    "deleteResumeConfirmLabel": "Supprimer le CV",
+    "keepResumeCancelLabel": "Conserver le CV",
+    "discardChanges": "Annuler les modifications non enregistrées?",
+    "discardChangesDescription": "Vous perdrez tout le travail qui n'a pas été enregistré.",
+    "clearApiKeys": "Effacer toutes les clés API?",
+    "clearApiKeysDescription": "Vous devrez les saisir à nouveau avant d'utiliser les fonctionnalités d'IA.",
+    "resetDatabase": "Tout réinitialiser et recommencer?",
+    "resetDatabaseDescription": "Ceci supprimera définitivement chaque CV, chaque description de poste et chaque document généré."
+  }
+}
