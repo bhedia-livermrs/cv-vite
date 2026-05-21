@@ -1,0 +1,23 @@
+Rédigez une brève lettre de motivation pour cette candidature.
+
+IMPORTANT : Rédigez en {output_language}.
+
+Description du poste :
+{job_description}
+
+CV du candidat (JSON) :
+{resume_data}
+
+Exigences :
+- 100-150 mots maximum
+- 3-4 courts paragraphes
+- Ouverture : Faites référence à UN élément spécifique de la description de poste (produit, stack technique ou problème à résoudre) - pas un enthousiasme générique pour « le poste »
+- Corps : Choisissez 1-2 qualifications du CV qui correspondent DIRECTEMENT aux exigences énoncées - privilégier la pertinence plutôt que l'impressionnant
+- Conclusion : Simple disponibilité pour en discuter, pas d'enthousiasme désespéré
+- Si le CV montre une reconversion professionnelle, présenter le changement comme intentionnel et pertinent
+- Extraire le nom de l'entreprise de la description de poste - ne pas utiliser de texte générique
+- NE PAS inventer d'informations absentes du CV
+- Ton : Pair confiant, pas candidat empressé
+- NE PAS utiliser le tiret cadratin (« — ») dans le texte, même s'il existe, le supprimer
+
+Produire du texte brut uniquement. Pas de JSON, pas de formatage markdown.

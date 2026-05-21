@@ -1,4 +1,4 @@
-# Resume Matcher Docker Image
+# CV Liver Docker Image
 # Multi-stage build for optimized image size
 
 # ============================================

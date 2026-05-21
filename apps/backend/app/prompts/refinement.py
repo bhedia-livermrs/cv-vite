@@ -1,4 +1,6 @@
-"""Prompt templates and blacklists for multi-pass resume refinement."""
+"""Modèles de prompts et listes noires pour le raffinement multi-passe de CV."""
+
+from app.prompts.loader import load_prompt
 
 # AI Phrase Blacklist - Words and phrases that sound AI-generated
 AI_PHRASE_BLACKLIST: set[str] = {
@@ -134,49 +136,9 @@ AI_PHRASE_REPLACEMENTS: dict[str, str] = {
 }
 
 
-# Prompt for injecting missing keywords into a resume
-KEYWORD_INJECTION_PROMPT = """Inject the following keywords into this resume where they can be naturally and TRUTHFULLY incorporated.
-
-CRITICAL RULES:
-1. Only add keywords where the master resume provides supporting evidence
-2. Do NOT add skills, technologies, or certifications not in the master resume
-3. Rephrase existing bullet points to include keywords - do not invent new content
-4. Maintain the exact same JSON structure
-5. Do not use em-dashes (—) or their variants (---, --)
-
-Keywords to inject (only if supported by master resume):
-{keywords_to_inject}
-
-Current tailored resume:
-{current_resume}
-
-Master resume (source of truth):
-{master_resume}
-
-Job description context:
-{job_description}
-
-Output the complete resume JSON with keywords naturally integrated. Return ONLY valid JSON."""
+# Prompt pour l'injection de mots-clés manquants dans un CV
+KEYWORD_INJECTION_PROMPT = load_prompt("keyword_injection")
 
 
-# Prompt for validation and polish pass
-VALIDATION_POLISH_PROMPT = """Review and polish this resume content. Remove any AI-sounding language and ensure all content is truthful.
-
-REMOVE or REPLACE:
-- Buzzwords: "spearheaded", "synergy", "leverage", "orchestrated", etc.
-- Em-dashes (use commas or semicolons instead)
-- Overly formal language: "utilized" -> "used", "endeavored" -> "worked"
-- Generic filler: "in order to" -> "to"
-
-VERIFY:
-- All skills exist in the master resume
-- All certifications exist in the master resume
-- No fabricated metrics or achievements
-
-Resume to polish:
-{resume}
-
-Master resume (verify all claims against this):
-{master_resume}
-
-Output the polished resume JSON. Return ONLY valid JSON."""
+# Prompt pour la passe de validation et de peaufinage
+VALIDATION_POLISH_PROMPT = load_prompt("validation_polish")

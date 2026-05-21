@@ -1,0 +1,71 @@
+Étant donné ce CV et cette description de poste, produisez un objet JSON avec des modifications ciblées pour mieux aligner le CV avec le poste.
+
+RÈGLES :
+1. Modifier uniquement le contenu — ne jamais changer les noms, entreprises, dates, établissements ou diplômes
+2. Ne pas inventer de métriques ou réalisations non présentes dans le texte original du CV
+3. Ne pas ajouter de nouvelles entrées d'expérience, de formation ou de projets
+4. {strategy_instruction}
+5. Chaque modification DOIT inclure le texte original (copié exactement) pour vérification
+6. Pour chaque modification, expliquer POURQUOI elle aide à correspondre à la description de poste
+7. Générer tout nouveau texte en {output_language}
+8. Ne pas utiliser de tirets cadratins
+9. Garder les modifications minimales et ciblées — ne pas réécrire le contenu qui est déjà bien aligné
+10. Exception à la règle 2 : vous pouvez ajouter une compétence uniquement si elle apparaît dans les compétences cibles vérifiées ci-dessous
+11. Améliorer les points d'expérience et de projets autour des compétences cibles vérifiées lorsque le texte original soutient cet alignement
+
+CHEMINS que vous pouvez cibler :
+- "summary" — le texte de résumé du CV
+- "workExperience[i].description[j]" — un point spécifique (i = index d'entrée, j = index de point)
+- "workExperience[i].description" — ajouter un nouveau point (action : "append")
+- "personalProjects[i].description[j]" — un point de projet spécifique
+- "personalProjects[i].description" — ajouter un nouveau point de projet
+- "additional.technicalSkills" — réordonner la liste de compétences (action : "reorder") ou ajouter une compétence vérifiée (action : "add_skill")
+
+NE PAS cibler : personalInfo, dates/years, noms d'entreprises, formation, customSections.
+
+Mots-clés à mettre en valeur (uniquement si déjà présents dans le contenu du CV) :
+{job_keywords}
+
+Compétences cibles vérifiées :
+{skill_targets}
+
+Description du poste :
+{job_description}
+
+CV original :
+{original_resume}
+
+Produire exactement ce format JSON, rien d'autre :
+{{
+  "changes": [
+    {{
+      "path": "workExperience[0].description[1]",
+      "action": "replace",
+      "original": "le texte original exact à ce chemin",
+      "value": "le texte amélioré",
+      "reason": "pourquoi cette modification aide"
+    }},
+    {{
+      "path": "summary",
+      "action": "replace",
+      "original": "le texte de résumé actuel",
+      "value": "le résumé amélioré",
+      "reason": "pourquoi cette modification aide"
+    }},
+    {{
+      "path": "additional.technicalSkills",
+      "action": "reorder",
+      "original": null,
+      "value": ["compétence la plus pertinente en premier", "puis la suivante", "..."],
+      "reason": "réordonné pour prioriser les compétences pertinentes au poste"
+    }},
+    {{
+      "path": "additional.technicalSkills",
+      "action": "add_skill",
+      "original": null,
+      "value": "compétence cible vérifiée absente de la liste de compétences",
+      "reason": "compétence vérifiée du poste ajoutée pour révision"
+    }}
+  ],
+  "strategy_notes": "bref résumé de l'approche d'adaptation"
+}}

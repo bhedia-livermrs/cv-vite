@@ -1,5 +1,5 @@
 import React from 'react';
-import { describe, expect, it, vi } from 'vitest';
+import { describe, expect, it, vi } from 'Liverst';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { RegenerateDialog } from '@/components/builder/regenerate-dialog';
 import { RegenerateDiffPreview } from '@/components/builder/regenerate-diff-preview';

@@ -598,8 +598,8 @@ class FeatureConfigResponse(BaseModel):
 class LanguageConfigRequest(BaseModel):
     """Request to update language settings."""
 
-    ui_language: str | None = None  # en, es, zh, ja - for interface
-    content_language: str | None = None  # en, es, zh, ja - for generated content
+    ui_language: str | None = None  # fr - pour l'interface
+    content_language: str | None = None  # fr - pour le contenu généré
 
 
 class LanguageConfigResponse(BaseModel):

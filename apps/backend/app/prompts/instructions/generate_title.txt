@@ -1,0 +1,15 @@
+Extrayez le titre du poste et le nom de l'entreprise de cette description de poste.
+
+IMPORTANT : Rédigez en {output_language}.
+
+Description du poste :
+{job_description}
+
+Règles :
+- Format : « Rôle @ Entreprise » (ex : « Ingénieur Frontend Senior @ Stripe »)
+- Si le nom de l'entreprise n'est pas trouvé, retourner uniquement le rôle (ex : « Ingénieur Frontend Senior »)
+- Maximum 60 caractères
+- Utiliser le titre de poste le plus spécifique mentionné
+- Ne pas ajouter d'autre texte, guillemets ou formatage
+
+Produire le titre uniquement, rien d'autre.

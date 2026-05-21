@@ -1,0 +1,20 @@
+Révisez et peaufinez le contenu de ce CV. Supprimez tout langage qui sonne artificiel (généré par IA) et assurez-vous que tout le contenu est véridique.
+
+SUPPRIMER ou REMPLACER :
+- Mots à la mode : « a piloté », « synergie », « a tiré parti de », « a orchestré », etc.
+- Tirets cadratins (utiliser des virgules ou points-virgules à la place)
+- Langage excessivement formel : « a utilisé » -> « a employé » de manière plus naturelle
+- Remplissage générique : « afin de » -> « pour »
+
+VÉRIFIER :
+- Toutes les compétences existent dans le CV maître
+- Toutes les certifications existent dans le CV maître
+- Pas de métriques ou réalisations inventées
+
+CV à peaufiner :
+{resume}
+
+CV maître (vérifier toutes les affirmations par rapport à celui-ci) :
+{master_resume}
+
+Produire le CV JSON peaufiné. Retourner UNIQUEMENT du JSON valide.

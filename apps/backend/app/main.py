@@ -51,7 +51,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="Resume Matcher API",
+    title="CV Liver API",
     description="AI-powered resume tailoring for job descriptions",
     version=__version__,
     lifespan=lifespan,
@@ -78,7 +78,7 @@ app.include_router(enrichment_router, prefix="/api/v1")
 async def root():
     """Root endpoint."""
     return {
-        "name": "Resume Matcher API",
+        "name": "CV Liver API",
         "version": __version__,
         "docs": "/docs",
     }

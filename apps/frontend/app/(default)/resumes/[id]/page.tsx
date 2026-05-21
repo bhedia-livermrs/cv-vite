@@ -215,7 +215,7 @@ export default function ResumeViewerPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-background">
+      <div className="flex-1 flex flex-col items-center justify-center bg-background">
         <Loader2 className="w-10 h-10 animate-spin text-blue-700 mb-4" />
         <p className="font-mono text-sm font-bold uppercase text-blue-700">
           {t('resumeViewer.loading')}
@@ -229,15 +229,14 @@ export default function ResumeViewerPage() {
     const isFailed = processingStatus === 'failed';
 
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-background p-4">
+      <div className="flex-1 flex flex-col items-center justify-center bg-background p-4">
         <div
-          className={`border p-6 text-center max-w-md shadow-sw-default ${
-            isProcessing
+          className={`border p-6 text-center max-w-md shadow-sw-default ${isProcessing
               ? 'bg-blue-50 border-blue-200'
               : isFailed
                 ? 'bg-orange-50 border-orange-200'
                 : 'bg-red-50 border-red-200'
-          }`}
+            }`}
         >
           <div className="flex justify-center mb-4">
             {isProcessing ? (
@@ -249,9 +248,8 @@ export default function ResumeViewerPage() {
             )}
           </div>
           <p
-            className={`font-bold mb-4 ${
-              isProcessing ? 'text-blue-700' : isFailed ? 'text-orange-700' : 'text-red-700'
-            }`}
+            className={`font-bold mb-4 ${isProcessing ? 'text-blue-700' : isFailed ? 'text-orange-700' : 'text-red-700'
+              }`}
           >
             {error || t('resumeViewer.resumeNotFound')}
           </p>
@@ -283,7 +281,7 @@ export default function ResumeViewerPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 md:px-8 overflow-y-auto">
+    <div className="flex-1 bg-background py-12 px-4 md:px-8 overflow-y-auto">
       <div className="max-w-7xl mx-auto">
         {/* Header Actions */}
         <div className="mb-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 no-print">

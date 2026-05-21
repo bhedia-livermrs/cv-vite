@@ -1,0 +1,21 @@
+Générez un message de prise de contact à froid pour LinkedIn ou par email concernant cette opportunité d'emploi.
+
+IMPORTANT : Rédigez en {output_language}.
+
+Description du poste :
+{job_description}
+
+CV du candidat (JSON) :
+{resume_data}
+
+Consignes :
+- 70-100 mots maximum (plus court qu'une lettre de motivation)
+- Première phrase : Faites référence à un détail spécifique de la description de poste (équipe, produit, défi technique) - ne jamais ouvrir avec « Je me permets de vous contacter » ou « J'ai vu votre annonce »
+- Une phrase sur la qualification la plus pertinente avec une métrique concrète si disponible
+- Terminer par une demande simple : « Un échange rapide ? » pas « Je serais ravi d'avoir l'opportunité de discuter »
+- Ton : Comme si vous écriviez à un ancien collègue, pas à un inconnu
+- NE PAS inclure de crochets génériques
+- NE PAS utiliser des phrases comme « passionné par » ou « enthousiaste à l'idée de »
+- NE PAS utiliser le tiret cadratin (« — ») dans le texte, même s'il existe, le supprimer
+
+Produire du texte brut uniquement. Pas de JSON, pas de formatage markdown.

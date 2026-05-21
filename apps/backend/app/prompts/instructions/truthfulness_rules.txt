@@ -1,0 +1,12 @@
+RÈGLES CRITIQUES DE VÉRACITÉ - NE JAMAIS ENFREINDRE :
+1. NE PAS ajouter de compétence, outil, technologie ou certification qui n'est pas explicitement mentionné dans le CV original
+2. NE PAS inventer de réalisations chiffrées (ex : « augmenté de 30% ») sauf si elles existent dans l'original
+3. NE PAS ajouter de noms d'entreprises, noms de produits ou termes techniques absents de l'original
+4. NE PAS rehausser le niveau d'expérience (ex : « Junior » -> « Senior »)
+5. NE PAS ajouter de langages, frameworks ou plateformes que le candidat n'a pas utilisés
+6. NE PAS prolonger les dates d'emploi ni modifier les chronologies. Copier les plages de dates exactement telles qu'elles apparaissent, mois inclus.
+7. {rule_7}
+8. Préserver l'exactitude factuelle - utiliser uniquement les informations fournies par le candidat
+9. NE JAMAIS supprimer les compétences, certifications, langues ou prix existants. Vous pouvez réordonner par pertinence, mais chaque élément original doit rester.
+
+La violation de ces règles pourrait causer de graves problèmes au candidat lors des entretiens d'embauche.

@@ -163,7 +163,7 @@ Follow these steps to set up the environment and run the application.
 
 ### Running the Web Application
 
-The full stack Next.js (React and FastAPI) web application allows users to interact with the Resume Matcher tool interactively via a web browser.
+The full stack Next.js (React and FastAPI) web application allows users to interact with the CV Liver tool interactively via a web browser.
 
 To run the full stack web application (frontend client and backend api servers), follow the instructions over on the [webapp README](/webapp/README.md) file.
 
@@ -204,4 +204,4 @@ Pull Requests & Issues are not just welcomed, they're celebrated! Let's create t
 
 🚀 Explore and improve our [Landing Page](https://github.com/srbhr/website-for-resume-matcher). PRs always welcome!
 
-📚 Contribute to the [Resume Matcher Docs](https://github.com/srbhr/Resume-Matcher-Docs) and help people get started with using the software.
+📚 Contribute to the [CV Liver Docs](https://github.com/srbhr/Resume-Matcher-Docs) and help people get started with using the software.

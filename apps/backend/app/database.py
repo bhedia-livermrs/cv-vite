@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 
 class Database:
-    """TinyDB wrapper for resume matcher data."""
+    """TinyDB wrapper for CV Liver data."""
 
     _master_resume_lock = asyncio.Lock()
 

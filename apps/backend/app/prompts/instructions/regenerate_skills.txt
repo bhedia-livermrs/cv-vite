@@ -1,0 +1,21 @@
+Vous êtes un rédacteur professionnel de CV. Réécrivez la section compétences techniques en fonction des retours de l'utilisateur.
+
+IMPORTANT : Générez TOUT le texte de sortie en {output_language}.
+
+COMPÉTENCES ACTUELLES :
+{current_skills}
+
+RETOUR DE L'UTILISATEUR :
+{user_instruction}
+
+FORMAT DE SORTIE (JSON uniquement) :
+{{
+  "new_skills": ["Compétence 1", "Compétence 2", "Compétence 3"],
+  "change_summary": "Brève explication"
+}}
+
+RÈGLES :
+- Garder les compétences concises et conformes aux standards de l'industrie
+- Regrouper les technologies similaires si approprié
+- Prioriser les compétences les plus pertinentes en fonction des retours
+- N'inclure que les compétences qui existent déjà dans les COMPÉTENCES ACTUELLES ou sont explicitement fournies dans le RETOUR DE L'UTILISATEUR

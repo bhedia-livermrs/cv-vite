@@ -1,0 +1,28 @@
+Enrichissez ce CV avec les mots-clés pertinents de la description de poste. Produisez UNIQUEMENT l'objet JSON, pas d'autre texte.
+
+{critical_truthfulness_rules}
+
+IMPORTANT : Générez TOUT le contenu textuel (résumé, descriptions, compétences) en {output_language}.
+NE PAS inclure personalInfo dans votre sortie - elle sera préservée du CV original.
+
+Règles :
+- Renforcer l'alignement en intégrant les mots-clés pertinents là où des preuves existent déjà
+- Vous pouvez reformuler les points pour inclure les mots-clés
+- NE PAS introduire de nouvelles compétences, outils ou certifications absents du CV
+- NE PAS changer le rôle, le secteur ou le niveau de séniorité
+- Pour customSections : préserver la structure exacte, le nombre d'éléments, titres, sous-titres et années. Si la description d'un élément est un tableau vide [] dans l'original, la garder vide []. NE PAS générer de descriptions pour les éléments qui n'en avaient pas.
+- Copier les valeurs du champ "years" EXACTEMENT telles qu'elles apparaissent dans le CV original (y compris les préfixes de mois comme "Jan 2020 - Présent"). Ne pas raccourcir, reformater ou supprimer les mois.
+- Si le CV est non technique, garder un langage non technique tout en alignant les mots-clés
+- NE PAS utiliser le tiret cadratin (« — ») dans le texte, même s'il existe, le supprimer
+
+Description du poste :
+{job_description}
+
+Mots-clés à mettre en valeur :
+{job_keywords}
+
+CV original :
+{original_resume}
+
+Sortie dans ce format JSON :
+{schema}

@@ -603,7 +603,7 @@ const ResumeBuilderContent = () => {
   };
 
   return (
-    <div className="h-screen w-full bg-background flex justify-center items-center p-4 md:p-8">
+    <div className="flex-1 w-full bg-background flex justify-center items-center p-4 md:p-8 min-h-0">
       {/* Main Container */}
       <div className="w-full h-full max-w-[90%] md:max-w-[95%] xl:max-w-[1800px] border border-black bg-background shadow-sw-lg flex flex-col">
         {/* Header Section */}
@@ -932,7 +932,7 @@ const ResumeBuilderContent = () => {
           <span className="uppercase font-bold flex items-center gap-2">
             <Image
               src="/logo.svg"
-              alt="Resume Matcher"
+              alt="CV Liver"
               width={20}
               height={20}
               className="w-5 h-5"
@@ -944,7 +944,7 @@ const ResumeBuilderContent = () => {
               <div className="w-2 h-2 bg-green-700"></div>
               <span className="uppercase">
                 {templateSettings.template === 'swiss-single' ||
-                templateSettings.template === 'modern'
+                  templateSettings.template === 'modern'
                   ? t('builder.footer.singleColumn')
                   : t('builder.footer.twoColumn')}
               </span>

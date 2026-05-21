@@ -16,7 +16,7 @@ export default function Hero() {
 
   return (
     <section
-      className="h-screen w-full p-4 md:p-12 lg:p-24 bg-background"
+      className="flex-1 w-full p-4 md:p-12 lg:p-24 bg-background"
       style={{
         backgroundImage:
           'linear-gradient(rgba(29, 78, 216, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(29, 78, 216, 0.1) 1px, transparent 1px)',
@@ -32,20 +32,12 @@ export default function Hero() {
 
         <div className="flex flex-col gap-4 md:flex-row md:gap-12">
           <a
-            href="https://github.com/srbhr/Resume-Matcher"
+            href="https://www.live-institut.com"
             target="_blank"
             rel="noopener noreferrer"
             className={buttonClass}
           >
-            GitHub
-          </a>
-          <a
-            href="https://resumematcher.fyi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={buttonClass}
-          >
-            {t('home.docs')}
+            Live Institut
           </a>
           <Link href="/dashboard" className={buttonClass}>
             {t('home.launchApp')}

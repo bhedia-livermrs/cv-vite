@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from 'vitest';
+import { describe, expect, it, vi } from 'Liverst';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { DiffPreviewModal } from '@/components/tailor/diff-preview-modal';
 import type {

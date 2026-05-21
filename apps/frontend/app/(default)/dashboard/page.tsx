@@ -293,7 +293,7 @@ export default function DashboardPage() {
   const fillerPalette = ['bg-secondary', 'bg-[#D8D8D2]', 'bg-[#CFCFC7]', 'bg-[#E0E0D8]'];
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 flex-1 flex flex-col min-h-0">
       {/* Configuration Warning Banner */}
       {masterResumeId && !isLlmConfigured && !statusLoading && (
         <div className="border-2 border-warning bg-amber-50 p-4 shadow-sw-default mb-6 flex items-center justify-between">

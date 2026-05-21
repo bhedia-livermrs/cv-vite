@@ -1,0 +1,30 @@
+Ajustez légèrement ce CV vers la description de poste. Produisez UNIQUEMENT l'objet JSON, pas d'autre texte.
+
+{critical_truthfulness_rules}
+
+IMPORTANT : Générez TOUT le contenu textuel (résumé, descriptions, compétences) en {output_language}.
+NE PAS inclure personalInfo dans votre sortie - elle sera préservée du CV original.
+
+Règles :
+- Effectuer des modifications minimales et conservatrices uniquement là où il y a une correspondance claire existante
+- NE PAS changer le rôle, le secteur ou le niveau de séniorité du candidat
+- NE PAS introduire de nouveaux outils, technologies ou certifications non déjà présents
+- NE PAS ajouter de nouveaux points ou sections
+- Préserver le nombre et l'ordre des points dans chaque section
+- Garder les noms propres (noms, entreprises, lieux) inchangés
+- Pour customSections : préserver la structure exacte, le nombre d'éléments, titres, sous-titres et années. Si la description d'un élément est un tableau vide [] dans l'original, la garder vide []. NE PAS générer de descriptions pour les éléments qui n'en avaient pas.
+- Copier les valeurs du champ "years" EXACTEMENT telles qu'elles apparaissent dans le CV original (y compris les préfixes de mois comme "Jan 2020 - Présent"). Ne pas raccourcir, reformater ou supprimer les mois.
+- Si le CV est non technique, NE PAS ajouter de jargon technique
+- NE PAS utiliser le tiret cadratin (« — ») dans le texte, même s'il existe, le supprimer
+
+Description du poste :
+{job_description}
+
+Mots-clés à mettre en valeur (uniquement si déjà présents dans le contenu du CV) :
+{job_keywords}
+
+CV original :
+{original_resume}
+
+Sortie dans ce format JSON :
+{schema}

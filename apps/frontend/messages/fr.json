@@ -34,7 +34,7 @@
   },
   "home": {
     "brandLine1": "CV ",
-    "brandLine2": "Vite",
+    "brandLine2": "Liver",
     "docs": "Documentation",
     "launchApp": "Démarrer l'application"
   },
@@ -341,7 +341,7 @@
           "website": "Site web"
         },
         "placeholders": {
-          "projectName": "Resume Matcher",
+          "projectName": "CV Liver",
           "role": "Créateur",
           "years": "Mar 2023",
           "github": "github.com/username/project",
@@ -687,15 +687,15 @@
         "label": "Message de prospection",
         "description": "Générer un message de réseautage pour LinkedIn ou e-mail"
       },
-      "customPromptLabel": "Invite personnalisée (optionnel)",
-      "customPromptHelp": "Doit inclure les espaces réservés suivants (chacun entre accolades) : job_description, resume_data, output_language. Laissez vide pour utiliser l'invite par défaut.",
+      "customPromptLabel": "InLiver personnalisée (optionnel)",
+      "customPromptHelp": "Doit inclure les espaces réservés suivants (chacun entre accolades) : job_description, resume_data, output_language. Laissez vide pour utiliser l'inLiver par défaut.",
       "customPromptResetButton": "Réinitialiser à la valeur par défaut",
       "customPromptErrorMissing": "Il manque les espaces réservés requis : {missing}"
     },
     "promptSettings": {
-      "title": "Paramètres d'invite",
-      "description": "Choisissez l'invite par défaut utilisée pour l'adaptation du CV.",
-      "defaultLabel": "Invite d'adaptation par défaut"
+      "title": "Paramètres Liver",
+      "description": "Choisissez la methode d'adaptation du CV.",
+      "defaultLabel": "Methode d'adaptation par défaut"
     },
     "footer": {
       "status": {

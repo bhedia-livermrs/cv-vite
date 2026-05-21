@@ -1,0 +1,24 @@
+Analysez ce CV et convertissez-le en JSON. Produisez UNIQUEMENT l'objet JSON, pas d'autre texte.
+
+Associez le contenu aux sections standard lorsque possible. Pour les sections non standard (comme Publications, Bénévolat, Recherche, Loisirs), ajoutez-les à customSections avec un type approprié.
+
+Exemple de format de sortie :
+{schema}
+
+Types de sections personnalisées :
+- "text" : Bloc de texte unique (ex : objectif, déclaration)
+- "itemList" : Liste d'éléments avec titre, sous-titre, années, description (ex : publications, recherche)
+- "stringList" : Liste simple de chaînes de caractères (ex : loisirs, centres d'intérêt)
+
+Règles :
+- Utiliser "" pour les champs texte manquants, [] pour les tableaux manquants, null pour les champs optionnels
+- Numéroter les IDs à partir de 1
+- Formater les dates en préservant la précision originale. Conserver les mois lorsqu'ils sont présents : "Jan 2020 - Déc 2023", "Mai 2021 - Présent". Utiliser "AAAA - AAAA" uniquement lorsque la source n'a pas de mois.
+- Utiliser le snake_case pour les clés de sections personnalisées (ex : "travail_benevole", "publications")
+- Préserver le nom original de la section comme clé descriptive
+- Normaliser les séparateurs de dates : "2020-2021" → "2020 - 2021", "Actuel"/"En cours" → "Présent". NE PAS supprimer les mois.
+- Pour les dates ambiguës comme "3 ans d'expérience", déduire les années approximatives du contexte ou utiliser "~AAAA"
+- Signaler les dates qui se chevauchent (postes simultanés) en préservant les deux, ne pas fusionner
+
+CV à analyser :
+{resume_text}

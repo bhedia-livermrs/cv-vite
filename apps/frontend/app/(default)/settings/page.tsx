@@ -570,7 +570,7 @@ export default function SettingsPage() {
   const requiresApiKey = providerInfo.requiresKey ?? true;
 
   return (
-    <div className="flex flex-col items-center justify-start p-6 md:p-12 min-h-screen overflow-y-auto">
+    <div className="flex flex-col items-center justify-start p-6 md:p-12 flex-1 overflow-y-auto">
       <div className="w-full max-w-4xl border border-black bg-background shadow-sw-lg">
         {/* Header */}
         <div className="border-b border-black p-8 bg-white flex justify-between items-start">
@@ -1210,7 +1210,7 @@ export default function SettingsPage() {
           <div className="flex items-center gap-2">
             <Image
               src="/logo.svg"
-              alt="CV Vite"
+              alt="CV Liver"
               width={20}
               height={20}
               className="w-5 h-5"

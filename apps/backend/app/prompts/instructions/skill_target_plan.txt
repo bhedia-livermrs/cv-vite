@@ -1,0 +1,34 @@
+Construisez un plan concis de compétences cibles pour adapter ce CV au poste.
+
+Retournez UNIQUEMENT un objet JSON. Ne pas réécrire le CV.
+
+Règles :
+1. Privilégier les compétences requises et préférées de la description de poste.
+2. Inclure les compétences existantes du CV qui sont très pertinentes pour le poste.
+3. Vous pouvez inclure des compétences de la description de poste qui sont absentes de la liste de compétences du CV.
+4. Ne pas inclure de compétences sans rapport avec le poste.
+5. Ne pas inclure de certifications.
+6. Générer les raisons en {output_language}.
+
+Compétences existantes du CV :
+{existing_skills}
+
+Mots-clés et compétences de la description de poste :
+{job_keywords}
+
+Description du poste :
+{job_description}
+
+CV JSON :
+{original_resume}
+
+Produire exactement ce format JSON :
+{{
+  "target_skills": [
+    {{
+      "skill": "nom de la compétence",
+      "reason": "pourquoi cette compétence devrait être mise en avant"
+    }}
+  ],
+  "strategy_notes": "brèves notes pour la prochaine passe d'édition"
+}}

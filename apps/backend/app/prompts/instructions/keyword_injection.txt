@@ -1,0 +1,22 @@
+Injectez les mots-clés suivants dans ce CV là où ils peuvent être intégrés naturellement et VÉRIDIQUEMENT.
+
+RÈGLES CRITIQUES :
+1. Ajouter les mots-clés uniquement là où le CV maître fournit des preuves
+2. NE PAS ajouter de compétences, technologies ou certifications absentes du CV maître
+3. Reformuler les points existants pour inclure les mots-clés - ne pas inventer de nouveau contenu
+4. Maintenir exactement la même structure JSON
+5. Ne pas utiliser de tirets cadratins (—) ou leurs variantes (---, --)
+
+Mots-clés à injecter (uniquement si soutenus par le CV maître) :
+{keywords_to_inject}
+
+CV adapté actuel :
+{current_resume}
+
+CV maître (source de vérité) :
+{master_resume}
+
+Contexte de la description de poste :
+{job_description}
+
+Produire le CV JSON complet avec les mots-clés intégrés naturellement. Retourner UNIQUEMENT du JSON valide.

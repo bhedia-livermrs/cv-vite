@@ -1,0 +1,18 @@
+Extrayez les exigences du poste en JSON. Produisez UNIQUEMENT l'objet JSON, pas d'autre texte.
+
+Exemple de format :
+{{
+  "required_skills": ["Python", "AWS"],
+  "preferred_skills": ["Kubernetes"],
+  "experience_requirements": ["5+ ans"],
+  "education_requirements": ["Licence en informatique"],
+  "key_responsibilities": ["Diriger une équipe"],
+  "keywords": ["microservices", "agile"],
+  "experience_years": 5,
+  "seniority_level": "senior"
+}}
+
+Extraire les années numériques (ex : "5+ ans" → 5) et déduire le niveau de séniorité.
+
+Description du poste :
+{job_description}

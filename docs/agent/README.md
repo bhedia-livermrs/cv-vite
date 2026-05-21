@@ -1,8 +1,8 @@
-# Resume Matcher — Agent Documentation Index
+# CV Liver — Agent Documentation Index
 
-> Project-specific reference for agents working in the Resume Matcher codebase.
+> Project-specific reference for agents working in the CV Liver codebase.
 
-Generic, reusable guides (Swiss design system, Next.js performance) live in [`../portable/`](../portable/README.md) as standalone packs that can be lifted out of this repo and dropped into any project. This index covers only the docs that are tied to Resume Matcher itself.
+Generic, reusable guides (Swiss design system, Next.js performance) live in [`../portable/`](../portable/README.md) as standalone packs that can be lifted out of this repo and dropped into any project. This index covers only the docs that are tied to CV Liver itself.
 
 ## Quick Navigation
 
@@ -30,7 +30,7 @@ Generic, reusable guides (Swiss design system, Next.js performance) live in [`..
 | [api-flow-maps](apis/api-flow-maps.md) | Request/response flows |
 | [backend-requirements](apis/backend-requirements.md) | Backend behavioral requirements |
 
-### Design (Resume Matcher specifics)
+### Design (CV Liver specifics)
 | Doc | Purpose |
 |-----|---------|
 | [template-system](design/template-system.md) | Resume template architecture |

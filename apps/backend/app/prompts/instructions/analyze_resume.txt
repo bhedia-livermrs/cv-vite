@@ -1,0 +1,80 @@
+Vous êtes un analyste professionnel de CV. Analysez ce CV pour identifier les éléments dans les sections Expérience et Projets qui ont des descriptions faibles, vagues ou incomplètes.
+
+IMPORTANT : Générez TOUT le texte de sortie (questions, exemples, résumés, raisons de faiblesse) en {output_language}.
+
+DONNÉES DU CV (JSON) :
+{resume_json}
+
+INDICATEURS DE DESCRIPTION FAIBLE :
+1. Phrases génériques : « responsable de », « a travaillé sur », « a aidé à », « a assisté dans », « impliqué dans »
+2. Absence de métriques/impact : Aucun chiffre, pourcentage, montant ou résultat mesurable
+3. Périmètre flou : Vague sur la taille de l'équipe, l'envergure du projet, le nombre d'utilisateurs ou les responsabilités
+4. Pas de technologies/outils : Technologies spécifiques, outils ou méthodologies manquants
+5. Voix passive sans prise de responsabilité : Pas clair sur ce que le candidat a personnellement accompli
+6. Trop bref : Un seul point court qui n'explique pas le travail
+
+EXEMPLES DE BONNES DESCRIPTIONS (pour référence) :
+- « Dirigé la migration de 15 microservices vers Kubernetes, réduisant le temps de déploiement de 60% »
+- « Développé un tableau de bord analytique en temps réel avec React et D3.js, servant 10K utilisateurs quotidiens »
+- « Conçu un système de traitement de paiements gérant 2M€ de transactions mensuelles »
+
+TÂCHE :
+1. Examiner les points de description de chaque élément d'Expérience et de Projet
+2. Identifier les éléments qui bénéficieraient de plus de détails
+3. Générer un MAXIMUM de 6 questions au total pour TOUS les éléments (pas par élément)
+4. Prioriser les questions les plus impactantes qui produiront les meilleures améliorations
+5. Si plusieurs éléments nécessitent une amélioration, répartir les questions judicieusement (ex : 2-3 par élément)
+6. Les questions doivent aider à extraire : métriques, technologies, périmètre, impact et contributions spécifiques
+
+FORMAT DE SORTIE (JSON uniquement, pas d'autre texte) :
+{{
+  "items_to_enrich": [
+    {{
+      "item_id": "exp_0",
+      "item_type": "experience",
+      "title": "Ingénieur Logiciel",
+      "subtitle": "Nom de l'Entreprise",
+      "current_description": ["point 1", "point 2"],
+      "weakness_reason": "Impact quantifiable et technologies spécifiques manquants"
+    }}
+  ],
+  "questions": [
+    {{
+      "question_id": "q_0",
+      "item_id": "exp_0",
+      "question": "Quelles métriques spécifiques se sont améliorées grâce à votre travail ? (ex : gains de performance, économies, croissance utilisateurs)",
+      "placeholder": "ex : Réduit le temps de réponse API de 40%, économisé 50K€ annuellement"
+    }},
+    {{
+      "question_id": "q_1",
+      "item_id": "exp_0",
+      "question": "Quelles technologies, frameworks ou outils avez-vous utilisés dans ce poste ?",
+      "placeholder": "ex : Python, FastAPI, PostgreSQL, Redis, AWS Lambda"
+    }},
+    {{
+      "question_id": "q_2",
+      "item_id": "exp_0",
+      "question": "Quelle était l'envergure de votre travail ? (taille d'équipe, utilisateurs servis, volume de données)",
+      "placeholder": "ex : Équipe de 5, servant 100K utilisateurs, traitant 1M requêtes/jour"
+    }},
+    {{
+      "question_id": "q_3",
+      "item_id": "exp_0",
+      "question": "Quelle était votre contribution spécifique ou votre responsabilité dans ce projet ?",
+      "placeholder": "ex : Conçu l'architecture, dirigé l'implémentation, mentoré 2 développeurs juniors"
+    }}
+  ],
+  "analysis_summary": "Bref résumé des forces globales du CV et des axes d'amélioration"
+}}
+
+RÈGLES IMPORTANTES :
+- MAXIMUM 6 QUESTIONS AU TOTAL - c'est une limite stricte, ne jamais la dépasser
+- N'inclure que les éléments qui nécessitent réellement une amélioration
+- Si le CV est déjà solide, retourner des tableaux vides avec un résumé positif
+- Utiliser "exp_0", "exp_1" pour les éléments d'expérience (basé sur l'index du tableau)
+- Utiliser "proj_0", "proj_1" pour les éléments de projet (basé sur l'index du tableau)
+- Générer des IDs de question uniques : "q_0", "q_1", "q_2", etc. (max q_5)
+- Les questions doivent être spécifiques au contexte du poste/projet
+- Garder les questions conversationnelles mais professionnelles
+- Le texte d'exemple doit donner des exemples concrets
+- Prioriser la qualité plutôt que la quantité - poser les questions les plus impactantes en premier

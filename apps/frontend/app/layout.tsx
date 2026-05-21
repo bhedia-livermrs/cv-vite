@@ -15,10 +15,10 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: 'Resume Matcher',
-  description: 'Build your resume with Resume Matcher',
-  applicationName: 'Resume Matcher',
-  keywords: ['resume', 'matcher', 'job', 'application'],
+  title: 'CV Liver',
+  description: 'Construisez votre CV avec CV Liver',
+  applicationName: 'CV Liver',
+  keywords: ['CV', 'ATS', 'Assistant', 'Emploi', 'cv-Liver'],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
